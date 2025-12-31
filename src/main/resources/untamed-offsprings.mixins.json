@@ -3,7 +3,8 @@
 	"package": "fr.estecka.untamedoffsprings.mixin",
 	"compatibilityLevel": "JAVA_21",
 	"mixins": [
-		"ExampleMixin"
+		"TameableEntityMixin$Cat",
+		"TameableEntityMixin$Wolf"
 	],
 	"injectors": {
 		"defaultRequire": 1
