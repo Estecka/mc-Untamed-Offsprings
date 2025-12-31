@@ -5,26 +5,27 @@
 	"name": "Untamed Offsprings",
 	"description": "This is an example description! Tell everyone what your mod is about!",
 	"authors": [
-		"Me!"
+		"Estecka"
 	],
 	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"homepage": "https://github.com/Estecka/mc-Untamed-Offsprings",
+		"sources":  "https://github.com/Estecka/mc-Untamed-Offsprings",
+		"issues":   "https://github.com/Estecka/mc-Untamed-Offsprings/issues"
 	},
-	"license": "CC0-1.0",
+	"license": "MIT",
 	"icon": "assets/untamed-offsprings/icon.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"fr.estecka.untamedoffsprings.UntamedOffsprings"
+			"fr.estecka.untamedoffsprings.UntamedOffspringsMod"
 		]
 	},
 	"mixins": [
 		"untamed-offsprings.mixins.json"
 	],
 	"depends": {
+		"minecraft": "~1.21.6",
 		"fabricloader": ">=0.18.4",
-		"minecraft": "~1.21.7",
 		"java": ">=21",
 		"fabric-api": "*"
 	}
