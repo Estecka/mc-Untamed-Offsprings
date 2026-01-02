@@ -17,7 +17,6 @@
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"fr.estecka.untamedoffsprings.UntamedOffspringsMod"
 		]
 	},
 	"mixins": [
@@ -25,7 +24,7 @@
 	],
 	"depends": {
 		"minecraft": "~1.21.6",
-		"fabricloader": ">=0.18.4",
+		"fabricloader": ">=0.16.14",
 		"java": ">=21",
 		"fabric-api": "*"
 	}
