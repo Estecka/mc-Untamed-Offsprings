@@ -5,6 +5,7 @@ import net.minecraft.entity.passive.WolfEntity;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Redirect;
+import com.llamalad7.mixinextras.injector.ModifyReturnValue;
 
 public class TameableEntityMixin
 {
@@ -27,6 +28,15 @@ public class TameableEntityMixin
 		)
 		private boolean IgnoreTamed(CatEntity me) {
 			return false;
+		}
+
+		@ModifyReturnValue(
+			method = "createChild",
+			at = @At("RETURN")
+		)
+		private CatEntity SetPersistent(CatEntity child) {
+			child.setPersistent();
+			return child;
 		}
 	}
 
